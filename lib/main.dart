@@ -1,6 +1,7 @@
 import 'package:binder/binder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_binder_example/screens/home_screen.dart';
+import 'package:flutter_binder_example/screens/login_screen.dart';
 
 void main() {
   runApp(const MyApplication());
@@ -13,7 +14,8 @@ class MyApplication extends StatelessWidget {
   Widget build(BuildContext context) {
     return BinderScope(
       child: MaterialApp(
-        home: HomeScreen(),
+        theme: ThemeData.dark(),
+        home: LoginScreen(),
       ),
     );
   }
