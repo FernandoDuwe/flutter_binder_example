@@ -14,6 +14,7 @@ class MyApplication extends StatelessWidget {
   Widget build(BuildContext context) {
     return BinderScope(
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: ThemeData.dark(),
         home: LoginScreen(),
       ),
